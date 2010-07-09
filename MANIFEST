@@ -1,0 +1,116 @@
+LICENSE
+MANIFEST
+META.yml
+Makefile.PL
+README
+dist.ini
+lib/LaTeX/ToUnicode.pm
+lib/LaTeX/ToUnicode/Tables.pm
+t/convert.t
+t/release-pod-coverage.t
+t/release-pod-syntax.t
+'tmp/ACUTE AND DOT ABOVE.txt'
+tmp/ACUTE.txt
+tmp/BAR.txt
+tmp/BELT.txt
+'tmp/BREVE AND ACUTE.txt'
+'tmp/BREVE AND DOT BELOW.txt'
+'tmp/BREVE AND GRAVE.txt'
+'tmp/BREVE AND HOOK ABOVE.txt'
+'tmp/BREVE AND TILDE.txt'
+'tmp/BREVE BELOW.txt'
+tmp/BREVE.txt
+'tmp/CARON AND DOT ABOVE.txt'
+tmp/CARON.txt
+'tmp/CEDILLA AND ACUTE.txt'
+'tmp/CEDILLA AND BREVE.txt'
+tmp/CEDILLA.txt
+'tmp/CIRCUMFLEX AND ACUTE.txt'
+'tmp/CIRCUMFLEX AND DOT BELOW.txt'
+'tmp/CIRCUMFLEX AND GRAVE.txt'
+'tmp/CIRCUMFLEX AND HOOK ABOVE.txt'
+'tmp/CIRCUMFLEX AND TILDE.txt'
+'tmp/CIRCUMFLEX BELOW.txt'
+tmp/CIRCUMFLEX.txt
+'tmp/COMMA BELOW.txt'
+tmp/COMMA.txt
+tmp/CROSSED-TAIL.txt
+tmp/CURL.txt
+tmp/DESCENDER.txt
+'tmp/DIAERESIS AND ACUTE.txt'
+'tmp/DIAERESIS AND CARON.txt'
+'tmp/DIAERESIS AND GRAVE.txt'
+'tmp/DIAERESIS AND MACRON.txt'
+'tmp/DIAERESIS BELOW.txt'
+tmp/DIAERESIS.txt
+'tmp/DIAGONAL STROKE.txt'
+'tmp/DOT ABOVE AND MACRON.txt'
+'tmp/DOT ABOVE.txt'
+'tmp/DOT BELOW AND DOT ABOVE.txt'
+'tmp/DOT BELOW AND MACRON.txt'
+'tmp/DOT BELOW.txt'
+'tmp/DOUBLE ACUTE.txt'
+'tmp/DOUBLE BAR.txt'
+'tmp/DOUBLE GRAVE.txt'
+'tmp/FISHHOOK AND MIDDLE TILDE.txt'
+tmp/FISHHOOK.txt
+tmp/FLOURISH.txt
+tmp/GRAVE.txt
+'tmp/HIGH STROKE.txt'
+'tmp/HOOK ABOVE.txt'
+'tmp/HOOK AND TAIL.txt'
+'tmp/HOOK TAIL.txt'
+tmp/HOOK.txt
+'tmp/HORIZONTAL BAR.txt'
+'tmp/HORN AND ACUTE.txt'
+'tmp/HORN AND DOT BELOW.txt'
+'tmp/HORN AND GRAVE.txt'
+'tmp/HORN AND HOOK ABOVE.txt'
+'tmp/HORN AND TILDE.txt'
+tmp/HORN.txt
+'tmp/INVERTED BREVE.txt'
+'tmp/LEFT HOOK.txt'
+'tmp/LINE BELOW.txt'
+'tmp/LONG LEG.txt'
+'tmp/LONG RIGHT LEG.txt'
+'tmp/LONG STROKE OVERLAY.txt'
+tmp/LOOP.txt
+'tmp/LOW RING INSIDE.txt'
+'tmp/MACRON AND ACUTE.txt'
+'tmp/MACRON AND DIAERESIS.txt'
+'tmp/MACRON AND GRAVE.txt'
+tmp/MACRON.txt
+'tmp/MIDDLE DOT.txt'
+'tmp/MIDDLE TILDE.txt'
+tmp/NOTCH.txt
+'tmp/OGONEK AND MACRON.txt'
+tmp/OGONEK.txt
+'tmp/PALATAL HOOK.txt'
+'tmp/RETROFLEX HOOK.txt'
+'tmp/RIGHT HALF RING.txt'
+'tmp/RIGHT HOOK.txt'
+'tmp/RING ABOVE AND ACUTE.txt'
+'tmp/RING ABOVE.txt'
+'tmp/RING BELOW.txt'
+'tmp/SMALL LETTER J.txt'
+'tmp/SMALL LETTER Z WITH CARON.txt'
+'tmp/SMALL LETTER Z.txt'
+'tmp/SQUIRREL TAIL.txt'
+tmp/STRIKETHROUGH.txt
+'tmp/STROKE AND ACUTE.txt'
+'tmp/STROKE AND DIAGONAL STROKE.txt'
+'tmp/STROKE THROUGH DESCENDER.txt'
+tmp/STROKE.txt
+'tmp/SWASH TAIL.txt'
+tmp/TAIL.txt
+'tmp/TILDE AND ACUTE.txt'
+'tmp/TILDE AND DIAERESIS.txt'
+'tmp/TILDE AND MACRON.txt'
+'tmp/TILDE BELOW.txt'
+tmp/TILDE.txt
+tmp/TOPBAR.txt
+tmp/UnicodeData.txt
+tmp/convert.pl
+tmp/results
+tmp/types
+weaver.ini
