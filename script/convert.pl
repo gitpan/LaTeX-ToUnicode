@@ -5,15 +5,14 @@ use warnings;
 use utf8;
 
 use feature 'say';
+use FindBin;
 
 my $UNICODE_DATA_URL = "http://www.unicode.org/Public/UNIDATA/UnicodeData.txt";
-my %COMBINED_CHARS = (
-    'DOTLESS I' => chr( 0x49 ),
-);
+
 
 my $stream;
-if ( -f 'UnicodeData.txt' ) {
-    open $stream, "<", "UnicodeData.txt" or die;
+if ( -f "$FindBin::Bin/UnicodeData.txt" ) {
+    open $stream, "<", "$FindBin::Bin/UnicodeData.txt" or die;
 } else {
     open $stream, "-|", "curl $UNICODE_DATA_URL" or die;
 }
@@ -132,18 +131,17 @@ while(<$stream>) {
         my $case = $1;
         my $letter = $2;
         my $accent = $3;
-        if ( $letter =~ / / ) {
-            $DB::single = 1;
-        }
 
-        if ( $letter =~ / / && $COMBINED_CHARS{$letter} ) {
-            $letter = $COMBINED_CHARS{$letter};
-        }
         if ( $case eq 'SMALL' ) {
             $letter = lc $letter;
         }
         if ( $chars{$accent} && $letter !~ / / ) {
-            $data{ $chars{$accent} }->{ $letter } = chr( eval "0x$hex" );
+            my $char = chr( eval "0x$hex" );
+            $data{ $chars{$accent} }->{ $letter } = $char;
+            if ( lc( $letter ) eq 'i' ) {
+                my $additional_letter = "\\$letter";
+                $data{ $chars{$accent} }->{ $additional_letter } = $char;
+            }
         } else {
             push @{ $missing{$accent} }, $letter;
         }

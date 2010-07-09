@@ -2,7 +2,7 @@ use strict;
 use warnings;
 package LaTeX::ToUnicode;
 BEGIN {
-  $LaTeX::ToUnicode::VERSION = '0.01';
+  $LaTeX::ToUnicode::VERSION = '0.02';
 }
 #ABSTRACT: Convert LaTeX commands to Unicode
 
@@ -29,8 +29,8 @@ sub convert {
 
 sub _convert_accents {
     my $string = shift;
-    $string =~ s/({\\(.){(\w{1,2})}})/$LaTeX::ToUnicode::Tables::ACCENTS{$2}{$3} || $1/eg; # {\"{a}}
-    $string =~ s/({\\(.)(\w{1,2})})/$LaTeX::ToUnicode::Tables::ACCENTS{$2}{$3} || $1/eg; # {\"a}
+    $string =~ s/({\\(.){(\\?\w{1,2})}})/$LaTeX::ToUnicode::Tables::ACCENTS{$2}{$3} || $1/eg; # {\"{a}}
+    $string =~ s/({\\(.)(\\?\w{1,2})})/$LaTeX::ToUnicode::Tables::ACCENTS{$2}{$3} || $1/eg; # {\"a}
     $string;
 }
 
@@ -101,7 +101,7 @@ LaTeX::ToUnicode - Convert LaTeX commands to Unicode
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 SYNOPSIS
 
