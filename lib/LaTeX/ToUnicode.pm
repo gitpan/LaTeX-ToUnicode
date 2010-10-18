@@ -2,7 +2,7 @@ use strict;
 use warnings;
 package LaTeX::ToUnicode;
 BEGIN {
-  $LaTeX::ToUnicode::VERSION = '0.02';
+  $LaTeX::ToUnicode::VERSION = '0.03';
 }
 #ABSTRACT: Convert LaTeX commands to Unicode
 
@@ -101,15 +101,15 @@ LaTeX::ToUnicode - Convert LaTeX commands to Unicode
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
 =head1 SYNOPSIS
 
   use LaTeX::ToUnicode qw( convert );
 
-  convert( '{\"a}'            ) eq 'ä';  # true
-  convert( '"a"', german => 1 ) eq 'ä';  # true, `german' package syntax
-  convert( '"a"',             ) eq '"a"'; # not enabled by default
+  convert( '{\"a}'           ) eq 'ä';  # true
+  convert( '"a', german => 1 ) eq 'ä';  # true, `german' package syntax
+  convert( '"a',             ) eq '"a'; # not enabled by default
 
 =head1 DESCRIPTION
 

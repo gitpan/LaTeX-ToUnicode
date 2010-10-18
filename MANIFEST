@@ -12,4 +12,5 @@ script/convert.pl
 t/convert.t
 t/release-pod-coverage.t
 t/release-pod-syntax.t
+t/release-synopsis.t
 weaver.ini

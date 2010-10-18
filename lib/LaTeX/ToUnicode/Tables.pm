@@ -1,6 +1,6 @@
 package LaTeX::ToUnicode::Tables;
 BEGIN {
-  $LaTeX::ToUnicode::Tables::VERSION = '0.02';
+  $LaTeX::ToUnicode::Tables::VERSION = '0.03';
 }
 use strict;
 use warnings;
@@ -459,7 +459,7 @@ LaTeX::ToUnicode::Tables - Character tables for LaTeX::ToUnicode
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
 =head1 CONSTANTS
 
@@ -481,7 +481,7 @@ Predefined escape commands for extended characters.
 Two-level hash of accented characters like C<\'{a}>. The keys of this hash
 are the accent symbols, e.g C<`>, C<"> or C<'>. The corresponding values are
 references to hashes, where the keys are the base letters and the values are
-the decoded characters. As an example, C< $ACCENTS{'`'}->{a} eq 'à'>.
+the decoded characters. As an example, C<< $ACCENTS{'`'}->{a} eq 'à' >>.
 
 =head2 %GERMAN
 
